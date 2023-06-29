@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Formulario de Registro</h1>
+    <form action="www.google.com">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña">
+        <br>
+
+        <label for="confirmar">Confirmar:</label>
+        <input type="password" id="confirmar" name="confirmar">
+        <br>
+
+        <label for="cumpleaños">Cumpleaños:</label>
+        <input type="date" id="cumpleaños" name="cumpleaños">
+        <br>
+
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="hombre" name="genero" value="masculino">
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="mujer" name="genero" value="femenino">
+        <label for="otro">Otro</label>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <br>
+
+        <label for="descripcion">Una breve descripción de ti:</label>
+        <br>
+
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+        <br>
+
+        <label for="lenguaje">Lenguaje Favorito:</label>
+        <select name="lenguaje" id="lenguaje">
+            <option value="js">JavaScript</option>
+            <option value="c#">C#</option>
+            <option value="java">Java</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
