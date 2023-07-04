@@ -1,0 +1,143 @@
+/*CSS reset settings here*/
+    *{
+    margin: 0px;
+    padding: 0px;    
+}
+
+body{
+    margin: 0 auto;
+    width: 1000px;
+    background-color: rgb(29, 29, 29);
+}
+
+header{
+    padding: 20px;
+    background-color: rgb(207, 207, 240);
+}
+header>h1,h2{
+    display: inline-block;
+}
+header>h1{
+    margin-left: 25px;
+    margin-right: 350px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    background: radial-gradient(rgb(131, 89, 115), rgb(43, 42, 42));
+}
+section{
+    padding: 20px;
+}
+section>img{
+    width: 400px;
+    padding: 5px;
+    background-color: rgb(190, 181, 181);
+    display: inline-block;
+    margin-right: 20px;
+}
+#aboutMe{
+    display: inline-block;
+    width: 500px;
+    height: 273px;
+    vertical-align: top;
+    background: linear-gradient(to right, white, rgb(205, 159, 216));
+}
+#aboutMe>#titulo{    
+    color: aliceblue;
+    background: radial-gradient(rgb(121, 120, 120), rgb(211, 207, 207));
+    width: 100%;    
+    padding: 10px 0;
+}
+
+#aboutMe>#titulo>h2{
+    margin-left: 10px;
+}    
+
+#aboutMe>#descripcion{
+    padding: 10px;
+}
+    
+#aboutMe>#descripcion>p{
+    margin-bottom: 10px;
+}
+
+.cartas{
+    display: inline-block;
+    width: 31.5%;
+    background: linear-gradient(to right, white, rgb(205, 159, 216));
+}
+#cartaCentro{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cartas .tituloCartas{
+    background: radial-gradient(rgb(121, 120, 120), rgb(211, 207, 207));
+}
+.cartas h2{
+    margin: 10px;
+    color: aliceblue;
+}
+.infoCartas>img{
+    width: 301px;
+}
+.infoCartas>p{
+    margin: 10px 10px 50px 10px;
+
+}
+
+.tecnoFotos{
+    padding: 10px;
+}
+.tecnoFotos img{
+    width: 40px;
+    margin: 5px;
+}
+
+.tecnoCartas{
+    height: 230px;
+}
+.tecnoCartas a{    
+    margin-left: 120px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(67, 141, 67);
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    box-shadow: 9px 9px 5px -1px rgba(0,0,0,0.61);
+    
+}
+
+footer{
+    background-color: aliceblue;
+}
+footer p{
+    text-align: center;
+    padding: 10px 0;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul li{
+    margin: 0 5px 0 5px;
+}
+
+footer ul li a img{
+    width: 25px;
+    padding: 5px;
+}
+
+footer ul li a{    
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
