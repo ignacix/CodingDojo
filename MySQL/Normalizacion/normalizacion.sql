@@ -60,14 +60,7 @@ DROP TABLE IF EXISTS `normalizacion`.`interests` ;
 CREATE TABLE IF NOT EXISTS `normalizacion`.`interests` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `interest` VARCHAR(45) NULL,
-  `student_id` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_interests_students1_idx` (`student_id` ASC) VISIBLE,
-  CONSTRAINT `fk_interests_students1`
-    FOREIGN KEY (`student_id`)
-    REFERENCES `normalizacion`.`students` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
 
@@ -87,6 +80,33 @@ CREATE TABLE IF NOT EXISTS `normalizacion`.`addresses` (
   CONSTRAINT `fk_addresses_students1`
     FOREIGN KEY (`student_id`)
     REFERENCES `normalizacion`.`students` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `normalizacion`.`students_interests`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `normalizacion`.`students_interests` ;
+
+CREATE TABLE IF NOT EXISTS `normalizacion`.`students_interests` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `student_id` INT NOT NULL,
+  `interest_id` INT NOT NULL,
+  `created_at` DATETIME NULL,
+  `updated_at` DATETIME NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_students_interests_students1_idx` (`student_id` ASC) VISIBLE,
+  INDEX `fk_students_interests_interests1_idx` (`interest_id` ASC) VISIBLE,
+  CONSTRAINT `fk_students_interests_students1`
+    FOREIGN KEY (`student_id`)
+    REFERENCES `normalizacion`.`students` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_students_interests_interests1`
+    FOREIGN KEY (`interest_id`)
+    REFERENCES `normalizacion`.`interests` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
