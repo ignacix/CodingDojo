@@ -1,0 +1,10 @@
+package com.cd.enrutamiento;
+
+@RequestController
+public class CodingController {
+	
+	
+	
+	
+
+}

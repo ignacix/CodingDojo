@@ -1,0 +1,13 @@
+package com.cd.enrutamiento;
+
+@RequestController
+public class CodingController {
+	
+	@RequestMapping("/")
+	public String Hello() {
+		return "Hola Coding Dojo!"
+	}
+	
+	
+
+}

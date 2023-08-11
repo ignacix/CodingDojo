@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\ignan\Desktop\Enrutamiento\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3582242782.index
+1419316724.index
+4054043073.index
+2615365042.index
+3285976111.index
+1438010288.index

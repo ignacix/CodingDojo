@@ -1,0 +1,23 @@
+package com.cd.enrutamiento;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DojoController {
+
+	
+	@RequestMapping("/{track}")
+	public String dojo(@PathVariable("track") String track) {		
+			if("dojo".equals(track)) {
+				return "Dojo es increible!";
+			}else if("burbank-dojo".equals(track)){
+				return "El Dojo Burbank está localizado al sur de California";
+			}else if("san-jose".equals(track)) {
+				return "El Dojo SJ es el cuartel general";
+			}else {
+				return "No se enviaron Parámetros URL";
+			}		
+	}
+}

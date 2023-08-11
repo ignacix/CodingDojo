@@ -1,0 +1,16 @@
+package com.cd.enrutamiento;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestController;
+@RequestController
+public class CodingController {
+	
+	@RequestMapping("/")
+	public String Hello() {
+		return "Hola Coding Dojo!";
+	}
+	
+	@RequestMapping("/python")
+	public String Python() {}
+
+}
